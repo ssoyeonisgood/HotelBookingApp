@@ -5,6 +5,8 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Button } from "./ui/button";
 import Dropdown from "./Dropdown";
+import MobileNav from "./MobileNav";
+import Nav from "./Nav";
 
 const socials = [
   { icon: <FaYoutube />, href: "#" },
@@ -61,6 +63,12 @@ const Header = async () => {
                   </RegisterLink>
                 </div>
               )}
+            </div>
+            <div className="xl:hidden">
+              <MobileNav />
+            </div>
+            <div className="hidden xl:flex">
+              <Nav isUserAuthenticated={isUserAuthenticated} />
             </div>
           </div>
         </div>

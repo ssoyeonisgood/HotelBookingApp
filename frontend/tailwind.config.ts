@@ -28,7 +28,7 @@ const config = {
           hover: "#3e3d4a",
         },
         secondary: { DEFAULT: "#6b6a71" },
-        accent: { DEFAULT: "#e85f4c", hover: "ea6f5e" },
+        accent: { DEFAULT: "#e85f4c", hover: "#ea6f5e" },
         tertiary: { DEFAULT: "#faf5ef" },
         grey: { DEFAULT: "#a09faf" },
       },
